@@ -60,10 +60,19 @@ AI 기반 상황 인식 쇼핑 어시스턴트 (LangGraph 기반 커머스 추�
 ## E. 관련 기술/논문/특허 조사
 
 - LangChain + LangGraph 기반 멀티 스텝 대화 제어 및 상태 흐름 관리
-- Google Gemini API를 통한 LLM 기반 자연어 이해 및 콘텐츠 생성
-- 네이버 오픈 API / 쿠팡 파트너스 API를 통한 실시간 상품 정보 연동
-- AI 기반 비교/추천 알고리즘 및 Prompt Engineering 설계
+"Agent AI with LangGraph: A Modular Framework for Enhancing Machine Translation Using Large Language Models"
+[https://arxiv.org/abs/2412.03801?utm_source=chatgpt.com]
+
+- 네이버 CLOVA X의 쇼핑몰 탐색 기능
+"HyperCLOVA X Technical Report" 한국어 추론 능력에서 뛰어난 성능을 보이며, 다양한 벤치마크에서 우수한 결과를 보였
+[https://arxiv.org/html/2404.01954v1?utm_source=chatgpt.com]
+
+- Google Gemini API를 통한 LLM 기반 자연어 이해 및 콘텐츠
+[https://medium.com/%40nikhitha.joy.official/building-an-llm-powered-application-with-googles-gemini-api-a-step-by-step-guide-915a0e9d1088]
+
 - 사용자 Context 인식 기반 추천 시스템 연구 논문
+"Deep Adaptive Interest Network: Personalized Recommendation with Context-Aware Learning":
+[https://arxiv.org/abs/2409.02425?utm_source=chatgpt.com]
 
 ## F. 프로젝트 개발 결과물 소개 (+ 다이어그램)
 
