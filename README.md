@@ -67,4 +67,60 @@ AI 기반 상황 인식 쇼핑 어시스턴트 (LangGraph 기반 커머스 추�
 "HyperCLOVA X Technical Report" 한국어 추론 능력에서 뛰어난 성능을 보이며, 다양한 벤치마크에서 우수한 결과를 보였
 [https://arxiv.org/html/2404.01954v1?utm_source=chatgpt.com]
 
-- Google Gemini API를 통한 LLM 기반 로 개제하고 있다. 개인화 전략을 통해 향후 본 커머스 서비스를 이용하는 고객에게 맞춤형 광고를 개제하여 광고수익을 효율적으로 얻을 수 있다.
+- Google Gemini API를 통한 LLM 기반 자연어 이해 및 콘텐츠
+[https://medium.com/%40nikhitha.joy.official/building-an-llm-powered-application-with-googles-gemini-api-a-step-by-step-guide-915a0e9d1088]
+
+- 사용자 Context 인식 기반 추천 시스템 연구 논문
+"Deep Adaptive Interest Network: Personalized Recommendation with Context-Aware Learning":
+[https://arxiv.org/abs/2409.02425?utm_source=chatgpt.com]
+
+## F. 프로젝트 개발 결과물 소개 (+ 다이어그램)
+
+> 아래 다이어그램은 전체 시스템 아키텍처를 설명합니다.
+> 
+
+### 서비스 아키텍쳐
+![image](https://github.com/user-attachments/assets/9956a03d-2351-417c-92ea-7f11d543b164)
+
+### DB Diagram
+![image](https://github.com/user-attachments/assets/7f6e20ee-f832-4bcf-b804-f767b4bd14ca)
+
+### API 명세
+![image](https://github.com/user-attachments/assets/b5facd28-9b4e-4183-b803-120bdcffecaa)
+
+
+### 주요 컴포넌트 요약
+
+- **Frontend (React)**: 사용자 입력 및 결과 시각화
+- **FastAPI Backend**: 입력/출력 관리, DB 및 로그 저장
+- **Gemini API**: 상황 분석, 키워드 생성, 상품 비교 요약
+- **네이버/쿠팡 API**: 실시간 상품 데이터 수집
+- **MariaDB**: 사용자 정보, 장바구니, 히스토리 저장
+- **AWS S3**: 로그 저장
+
+### 기능 흐름 요약
+
+1. 유저가 자연어 입력 (예: "혼자 캠핑 가는데 뭐 필요해?")
+2. LangGraph 파이프라인이 상황을 분석하고 필요한 상품 유형 추천
+3. 상품명을 검색 최적화 키워드로 변환
+4. API를 통해 상품 검색 및 정보 수집
+5. Gemini를 통해 장단점 비교 및 최종 추천 출력
+
+## G. 개발 결과물을 사용하는 방법 소개 (설치 방법, 동작 방법 등)
+
+### 이용 방법
+
+```
+
+```
+
+## H. 개발 결과물의 활용방안 소개
+
+- **개인화 커머스 쇼핑 플랫폼**: 사용자의 상황을 기반으로 맞춤형 상품 추천 제공
+- **챗봇 커머스 어시스턴트**: 네이버톡/카카오톡 기반 쇼핑 비서로 활용 가능
+
+- **수익화 방안**:
+    1. 쿠팡 파트너스 api를 통해 생성된 url은 일반적인 url과 달리 파트너스 셀러의 정보를 포함하고 있다. 따라서 소비자가 해당 url을 통해
+     상품을 구매했다면, 구매한 상품의 가격에 따른 수수료를 해당 파트너스 셀러가 갖게되고, url의 조회수에 따른 광고비용 또한 쿠팡파트너스 정책에 따라 제공받을 수 있다.
+
+    2. 현재 서비스에서 부산 지역내의 소상공인/기업의 광고를 현재 무상으로 개제하고 있다. 개인화 전략을 통해 향후 본 커머스 서비스를 이용하는 고객에게 맞춤형 광고를 개제하여 광고수익을 효율적으로 얻을 수 있다.
