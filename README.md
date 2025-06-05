@@ -41,10 +41,9 @@ AI 기반 상황 인식 쇼핑 어시스턴트 (LangGraph 기반 커머스 추�
 도 추가 개발.
 
 > 아키텍처 구성, 개발 일정, 세부 기능 설명 등은 아래 링크를 참고부탁드립니다.
+
 [https://cautious-cheque-326.notion.site/8-1e4bce475fda80e093afda7832ac3675](https://www.notion.so/8-1e4bce475fda80e093afda7832ac3675?pvs=21)
 > 
-
-![image.png](attachment:be471669-fcc4-41e7-ba4c-47e14ebf658a:image.png)
 
 ## D. 프로젝트 필요성 소개
 
@@ -72,16 +71,14 @@ AI 기반 상황 인식 쇼핑 어시스턴트 (LangGraph 기반 커머스 추�
 > 
 
 ### 서비스 아키텍쳐
-
-![image.png](attachment:275cda93-c57c-4e9b-9ab3-6004cce1c1a3:image.png)
+![image](https://github.com/user-attachments/assets/9956a03d-2351-417c-92ea-7f11d543b164)
 
 ### DB Diagram
-
-![image.png](attachment:ad401ac5-9785-4179-9287-3aafce71615c:image.png)
+![image](https://github.com/user-attachments/assets/7f6e20ee-f832-4bcf-b804-f767b4bd14ca)
 
 ### API 명세
+![image](https://github.com/user-attachments/assets/b5facd28-9b4e-4183-b803-120bdcffecaa)
 
-![image.png](attachment:f785f337-642f-418c-aa09-5177cb400dcf:image.png)
 
 ### 주요 컴포넌트 요약
 
